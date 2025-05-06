@@ -1,0 +1,14 @@
+@media only screen and (max-width: 375px) {
+    label {
+        display: flex;
+    }
+
+    input {
+        display: flex;
+        margin-left: 10px;
+        margin-bottom: 10px;
+
+    
+    }
+}
+

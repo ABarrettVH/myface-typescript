@@ -1,1 +1,7 @@
 /* Add your styles here. */
+@media only screen and (max-width: 375px) {
+    h1 {
+        color: blue;
+    }
+}
+

@@ -1,0 +1,220 @@
+
+    @media only screen and (max-width: 375px) {
+
+        .postList {
+            width:100%;
+            display: grid;
+            position: relative;
+            grid-template-columns: 1fr, 1fr;
+            grid-template-rows: 70%, 10%, 20%;
+            grid-gap: 1px;
+            justify-content: center;
+          }
+          
+        .postimages {
+            width: 100%;
+            grid-column: 1/ span 2;
+            grid-row: 1;
+
+        }
+        .postMessage {
+            grid-column: 1/ span 2;
+            grid-row: 2;
+            text-align: center;
+
+        }
+
+        .likes_dislikes {
+            grid-column: 1/ span 2;
+            grid-row: 3;
+            text-align: center;
+            width:100%;
+            display: grid;
+            grid-template-columns: 1fr, 1fr;
+            grid-template-rows: 1fr, 1fr;
+            justify-content: left;
+            grid-gap: 15px;
+
+
+        }
+
+
+
+         .like-form {
+            grid-column: 1;
+            grid-row: 1;
+            text-align: center;
+    
+            
+        }
+        .dislike-form {
+            grid-column: 2;
+            grid-row: 1;
+            text-align: center;
+    
+    
+        }
+        #like-text {
+            grid-column: 1;
+            grid-row: 2;
+            margin-top: 0;
+            text-align: center;
+    
+    
+        }
+        #dislike-text {
+            grid-column: 2;
+            grid-row: 2;
+            margin-top: 0;
+            text-align: center;
+    
+        } 
+    
+
+        .list-of-posts {
+            padding-left:0;
+        }
+    }
+
+
+    @media only screen and (min-width: 750px) {
+  
+    .list-of-posts  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .postList {
+
+        flex-basis: 25%;
+
+    }
+
+    .postMessage {
+        width: 80%;
+        text-align: center;
+    }
+
+  
+    .postimages {
+        flex-flow: row wrap;
+        margin-bottom: 10px;
+        width: 80%;
+    }
+
+    .likes_dislikes {
+        width:100%;
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: 1fr, 1fr;
+        justify-content: left;
+        grid-gap: 15px;
+
+    }
+    .like-form {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: left;
+
+        
+    }
+    .dislike-form {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+
+
+    }
+    #like-text {
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 0;
+        text-align: left;
+
+
+    }
+    #dislike-text {
+        grid-column: 2;
+        grid-row: 2;
+        margin-top: 0;
+        text-align: left;
+
+    }
+
+
+    }
+
+    @media only screen and (max-width: 750px) and (min-width: 375px) {
+  
+        .list-of-posts  {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    
+        .postList {
+    
+            flex-basis: 50%;
+    
+        }
+
+        .postMessage {
+            width: 80%;
+            text-align: center;
+        }
+    
+      
+        .postimages {
+            flex-flow: row wrap;
+            margin-bottom: 10px;
+            width: 80%;
+        }
+
+        form {
+            flex-flow: row wrap;
+            width: 80%;
+        }
+
+        .likes_dislikes {
+            width:100%;
+            display: grid;
+            grid-template-columns: 1fr, 1fr;
+            grid-template-rows: 1fr, 1fr;
+            justify-content: left;
+            grid-gap: 15px;
+    
+        }
+        .like-form {
+            grid-column: 1;
+            grid-row: 1;
+            text-align: left;
+    
+            
+        }
+        .dislike-form {
+            grid-column: 2;
+            grid-row: 1;
+            text-align: left;
+    
+    
+        }
+        #like-text {
+            grid-column: 1;
+            grid-row: 2;
+            margin-top: 0;
+            text-align: left;
+    
+    
+        }
+        #dislike-text {
+            grid-column: 2;
+            grid-row: 2;
+            margin-top: 0;
+            text-align: left;
+    
+        }
+    
+        }
+
+    
