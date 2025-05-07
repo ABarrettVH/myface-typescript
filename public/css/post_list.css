@@ -1,220 +1,333 @@
-
-    @media only screen and (max-width: 375px) {
-
-        .postList {
-            width:100%;
-            display: grid;
-            position: relative;
-            grid-template-columns: 1fr, 1fr;
-            grid-template-rows: 70%, 10%, 20%;
-            grid-gap: 1px;
-            justify-content: center;
-          }
-          
-        .postimages {
-            width: 100%;
-            grid-column: 1/ span 2;
-            grid-row: 1;
-
-        }
-        .postMessage {
-            grid-column: 1/ span 2;
-            grid-row: 2;
-            text-align: center;
-
-        }
-
-        .likes_dislikes {
-            grid-column: 1/ span 2;
-            grid-row: 3;
-            text-align: center;
-            width:100%;
-            display: grid;
-            grid-template-columns: 1fr, 1fr;
-            grid-template-rows: 1fr, 1fr;
-            justify-content: left;
-            grid-gap: 15px;
-
-
-        }
-
-
-
-         .like-form {
-            grid-column: 1;
-            grid-row: 1;
-            text-align: center;
-    
-            
-        }
-        .dislike-form {
-            grid-column: 2;
-            grid-row: 1;
-            text-align: center;
-    
-    
-        }
-        #like-text {
-            grid-column: 1;
-            grid-row: 2;
-            margin-top: 0;
-            text-align: center;
-    
-    
-        }
-        #dislike-text {
-            grid-column: 2;
-            grid-row: 2;
-            margin-top: 0;
-            text-align: center;
-    
-        } 
-    
-
-        .list-of-posts {
-            padding-left:0;
-        }
+@media only screen and (max-width: 375px) {  
+    header {
+        background-color: #151820;
     }
-
-
-    @media only screen and (min-width: 750px) {
-  
-    .list-of-posts  {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    header nav a {
+        color: #dcdcdc;
+        padding: 24px;
+        font-size: 20px;
+        line-height: 24px;
     }
-
+   body {
+    background-color: #252a38;
+    color: #dcdcdc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   h1 {
+    font-size: 24px;
+    line-height: 32px;
+   }
     .postList {
-
-        flex-basis: 25%;
-
-    }
-
-    .postMessage {
-        width: 80%;
-        text-align: center;
-    }
-
-  
+        width:100%;
+        display: grid;
+        position: relative;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: 70%, 10%,10%, 10%;
+        grid-gap: 1px;
+        justify-content: center;
+        margin-bottom: 24px;
+        background-color: #151820;
+      }
     .postimages {
-        flex-flow: row wrap;
-        margin-bottom: 10px;
-        width: 80%;
+        width: 100%;
+        grid-column: 1/ span 2;
+        grid-row: 1;
     }
-
+    .postMessage {
+        font-weight: 400;
+        grid-column: 1/ span 2;
+        grid-row: 3;
+        text-align: left;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .postDate {
+        grid-column: 1/ span 2;
+        grid-row: 2 ;
+        font-weight: 300;
+        text-align: left;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
     .likes_dislikes {
+        grid-column: 1/ span 2;
+        grid-row: 4;
+        text-align: center;
         width:100%;
         display: grid;
         grid-template-columns: 1fr, 1fr;
         grid-template-rows: 1fr, 1fr;
         justify-content: left;
         grid-gap: 15px;
-
     }
+     .like-form {
+        position: relative;
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+        justify-content: center; 
+    }
+    .dislike-form {
+        position: relative;
+        grid-column: 2;
+        grid-row: 1;
+        text-align: center;
+        justify-content: center;
+    }
+    button {
+        background-color: #252a38;
+        font-size: 20px;
+        line-height: 32px;
+        border: 1px #2985FF solid;
+        color: #dcdcdc;
+    }
+    button:hover {
+        background-color;: #2985FF
+    }
+    #like-text {
+        position: relative;
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    #dislike-text {
+        position: relative;
+        grid-column: 2;
+        grid-row: 2;
+        margin-top: 0;
+        text-align: center;
+        justify-content: center;
+    } 
+    .list-of-posts {
+        padding-left:0;
+    }
+}
+   /*medium size */
+@media only screen and (max-width: 750px) and (min-width: 375px) {
+    header {
+        background-color: #151820;
+    }
+
+    header nav a {
+        color: #dcdcdc;
+        padding: 24px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    a:hover {
+        color: #2985FF
+    }
+
+    body {
+        background-color: #252a38;
+        color: #dcdcdc;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .list-of-posts {
+        list-style: none;
+        background-color: #252A38;
+        color: #DCDCDC;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 32px;
+        row-gap: 32px;
+    }
+
+    .postList {
+        background-color: #151820;
+        flex-basis: 40%;
+    }
+
+    .postMessage {
+        width: 100%;
+        text-align: center;
+    }
+
+    .postDate {
+        font-weight: 300;
+    }
+
+    .postimages {
+        flex-flow: row wrap;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    form {
+        flex-flow: row wrap;
+        width: 80%;
+    }
+
+    .likes_dislikes {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: 1fr, 1fr;
+        justify-content: left;
+        grid-gap: 15px;
+    }
+
     .like-form {
         grid-column: 1;
         grid-row: 1;
         text-align: left;
-
-        
     }
+
     .dislike-form {
         grid-column: 2;
         grid-row: 1;
         text-align: left;
-
-
     }
+
     #like-text {
         grid-column: 1;
         grid-row: 2;
         margin-top: 0;
         text-align: left;
-
-
     }
+
     #dislike-text {
         grid-column: 2;
         grid-row: 2;
         margin-top: 0;
         text-align: left;
+    }
 
+    button {
+        background-color: #252a38;
+        font-size: 20px;
+        line-height: 32px;
+        border: 1px #2985FF solid;
+        color: #dcdcdc;
+    }
+
+    button:hover {
+        color: #2985FF
+    }
+}
+
+/* large screen */
+@media only screen and (min-width: 750px) {
+    header {
+        background-color: #151820;
+    }
+
+    header nav a {
+        color: #dcdcdc;
+        padding: 24px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    a:hover {
+        color: #2985FF
+    }
+
+    body {
+        background-color: #252a38;
+        color: #dcdcdc;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 32px;
     }
 
 
+    .list-of-posts {
+        list-style: none;
+        background-color: #252A38;
+        color: #DCDCDC;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 32px;
+        row-gap: 32px;
     }
 
-    @media only screen and (max-width: 750px) and (min-width: 375px) {
-  
-        .list-of-posts  {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-    
-        .postList {
-    
-            flex-basis: 50%;
-    
-        }
+    .postList {
+        background-color: #151820;
+        flex-basis: 20%;
+    }
 
-        .postMessage {
-            width: 80%;
-            text-align: center;
-        }
-    
-      
-        .postimages {
-            flex-flow: row wrap;
-            margin-bottom: 10px;
-            width: 80%;
-        }
+    .postMessage {
+        width: 100%;
+        text-align: left;
+    }
 
-        form {
-            flex-flow: row wrap;
-            width: 80%;
-        }
+    .postDate {
+        font-weight: 300;
+        text-align: left;
+    }
 
-        .likes_dislikes {
-            width:100%;
-            display: grid;
-            grid-template-columns: 1fr, 1fr;
-            grid-template-rows: 1fr, 1fr;
-            justify-content: left;
-            grid-gap: 15px;
-    
-        }
-        .like-form {
-            grid-column: 1;
-            grid-row: 1;
-            text-align: left;
-    
-            
-        }
-        .dislike-form {
-            grid-column: 2;
-            grid-row: 1;
-            text-align: left;
-    
-    
-        }
-        #like-text {
-            grid-column: 1;
-            grid-row: 2;
-            margin-top: 0;
-            text-align: left;
-    
-    
-        }
-        #dislike-text {
-            grid-column: 2;
-            grid-row: 2;
-            margin-top: 0;
-            text-align: left;
-    
-        }
-    
-        }
+    .postimages {
+        flex-flow: row wrap;
+        margin-bottom: 10px;
+        width: 100%;
+    }
 
-    
+    form {
+        flex-flow: row wrap;
+        width: 80%;
+    }
+
+    .likes_dislikes {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: 1fr, 1fr;
+        justify-content: left;
+        grid-gap: 15px;
+    }
+
+    .like-form {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: left;
+    }
+
+    .dislike-form {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+    }
+
+    #like-text {
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    #dislike-text {
+        grid-column: 2;
+        grid-row: 2;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    button {
+        background-color: #252a38;
+        font-size: 20px;
+        line-height: 32px;
+        border: 1px #2985FF solid;
+        color: #dcdcdc;
+    }
+
+    button:hover {
+        background-color: #2985FF
+    }
+}

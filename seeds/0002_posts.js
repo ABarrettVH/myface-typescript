@@ -1531,7 +1531,7 @@ const posts = [
   },
   {
     message: "Realigned bandwidth-monitored workforce",
-    imageUrl: "https://picsum.photos/id/697/600",
+    imageUrl: "https://picsum.photos/id/264/600",
     createdAt: "2021-01-26 08:43:43",
     userId: 44,
   },

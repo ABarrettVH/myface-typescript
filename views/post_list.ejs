@@ -5,15 +5,18 @@
 <h1 >Posts</h1>
 <ol class="list-of-posts">
     <% postList.results.forEach(function(post) {%>
-        <li class="postList">
-             <p class= "postMessage" ><%= post.message %></p>
-           
-             <img class = "postimages" src="<%=post.imageUrl %>" alt = "Placeholder image description"> 
-             <div class="likes_dislikes">   
-             <form class="like-form" method="post" action="/posts/<%= post.id %>/like/"> <button class="like-button" type="submit">Like</button> </form>  <p id="like-text" ><% post.likedBy.length %> likes </p> 
-             <form class="dislike-form" method="post" action="/posts/<%= post.id %>/dislike/"> <button type="submit">Dislike</button> </form> <p id="dislike-text"><%= post.dislikedBy.length %> dislikes</p>
+        <li class="postList">           
+               
+            <img class = "postimages" src="<%=post.imageUrl %>" alt = "Placeholder image description"> 
+            <p class= "postDate"> <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %></p>  
+            <p class= "postMessage" ><%= post.message %></p> 
+            <div class="likes_dislikes">   
+            <form class="like-form" method="post" action="/posts/<%= post.id %>/like/"> <button class="like-button" type="submit">Like</button> </form>
+          <!--  <p id="like-text" ><% post.likedBy.length %> likes </p> --> 
+             <form class="dislike-form" method="post" action="/posts/<%= post.id %>/dislike/"> <button type="submit">Dislike</button> </form> 
+          <!--     <p id="dislike-text"><%= post.dislikedBy.length %> dislikes</p> -->
              </div>
-
+             
 
             
                         

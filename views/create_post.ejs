@@ -1,15 +1,15 @@
 <html lang="en-gb">
 <body>
 
-<h1>Create New Post</h1>
+<h1 class="createPost">Create New Post</h1>
 <form method="post" action="/create/post">
-    <label>
-        Post Message:
-        <input type="text" name="message"/>
+    <label class="createNewPost">
+        <p id="postMessage">Post Message:</p>
+        <input id="postMessageInput" type="text" name="message"/>
     </label>
-    <label>
-        Image URL:
-        <input type="url" name="imageUrl"/>
+    <label class="createNewPost">
+        <p id="imageUrl">Image URL:</p>
+        <input id="imageUrlInput" type="url" name="imageUrl"/>
     </label>
     
     <button type="submit">Submit</button>
