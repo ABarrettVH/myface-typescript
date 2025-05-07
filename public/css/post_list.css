@@ -84,7 +84,7 @@
         color: #dcdcdc;
     }
     button:hover {
-        background-color;: #2985FF
+        background-color: #2985FF
     }
     #like-text {
         position: relative;
@@ -214,7 +214,7 @@
     }
 
     button:hover {
-        color: #2985FF
+        background-color: #2985FF
     }
 }
 
@@ -232,7 +232,7 @@
     }
 
     a:hover {
-        color: #2985FF
+        background-color: #2985FF
     }
 
     body {
