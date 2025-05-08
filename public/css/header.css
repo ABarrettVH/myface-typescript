@@ -31,11 +31,11 @@
 }
 @media only screen and (max-width: 750px) and (min-width: 375px)  {
     .menu {
-        display: none; 
+        border: none; 
     }
 }
 @media only screen and (min-width: 750px) {
     .menu {
-        display: none; 
+        border: none; 
     }
 }
