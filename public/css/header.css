@@ -1,0 +1,41 @@
+@media only screen and (max-width: 375px) {
+    .menu {
+        width: 50px; /*controls size*/
+        border: none;
+        aspect-ratio: 1;
+        background:
+         radial-gradient(closest-side at 12.5% 25%,#000 96%,#0000) 0 0/80% 40%,
+         linear-gradient(#000 50%,#dcdcdc 0) top/80% 40% repeat-y;
+         float: right;
+    }
+
+    .postLinkOpen {
+       visibility: visible;
+        display: inline ;
+    }
+
+    .userLinkOpen {
+        visibility: visible;
+        display: inline ;
+    }
+
+    .postLinkClose {
+        display: none;
+    }
+
+    .userLinkClose {
+        display: none;
+    }
+
+
+}
+@media only screen and (max-width: 750px) and (min-width: 375px)  {
+    .menu {
+        display: none; 
+    }
+}
+@media only screen and (min-width: 750px) {
+    .menu {
+        display: none; 
+    }
+}

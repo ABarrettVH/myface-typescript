@@ -33,8 +33,6 @@ h1.createPost {
     grid-row: 2;
 }
 
-
-
 @media only screen and (max-width: 375px) {
     .createNewPost {
         grid-template-columns: 130px 150px;
