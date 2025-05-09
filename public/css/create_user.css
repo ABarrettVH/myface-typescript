@@ -67,6 +67,18 @@
         height: 25px;
     }
 
+    #nameInput:not(:placeholder-shown) {
+        border-color: green;
+        cursor: pointer;
+
+}
+
+    #nameInput:placeholder-shown:has(> label ~ button) {
+    border-color: red;
+    cursor:not-allowed;
+     opacity: 0.7;
+}
+
 
     @media only screen and (max-width: 375px) {
         .createUserLabel {
